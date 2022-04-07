@@ -1,0 +1,135 @@
+<%- include('includes/header.ejs') %>
+  <div class="file-page">
+    <div class="file-header">
+      <div class="file-header__info">
+        <div class="file-info">
+          <div class="file-info__name">
+            <i class="file-info__name-icon fas fa-file-alt"></i>
+            <input class="file-info__name-text" id="name-input" name="namefile"></input>
+          </div>
+          <div class="file-info__detail">
+            <button class="btn file-info__detail-star">
+              <i class="fas fa-star"></i>
+            </button>
+            <button class="btn file-info__detail-status">
+              <i class="fas fa-info-circle"></i>
+            </button>
+          </div>
+        </div>
+        <ul class="file-bar">    
+          <li class="btn file-bar__btn file-bar__file-btn">
+            File
+            <div class="option file-bar__file-option">
+            <button class="option-btn file-option__new">
+              <i class="option-icon fas fa-file"></i>
+              New
+            </button>
+            <a href="#recent" class="option-btn file-option__open">
+              <i class="option-icon far fa-folder-open"></i>
+              Open
+            </a>
+            <button class="option-btn file-option__detail">
+              <i class="option-icon fas fa-info-circle"></i>
+              Detail
+            </button>
+            <button class="option-btn file-option__rename">
+              <i class="option-icon fas fa-file-signature"></i>
+              Rename
+            </button>
+            <button class="option-btn file-option__save" type="submit">
+              <i class="option-icon fas fa-save"></i>
+              Save
+            </button>
+            <a class="option-btn file-option__download" id="download">
+              <i class="option-icon fas fa-download"></i>
+              Download
+            </a>
+            <button class="option-btn file-option__delete">
+              <i class="option-icon fas fa-trash"></i>
+              Delete
+            </button>
+            </div>
+          </li>
+          <li class="btn file-bar__btn file-bar__edit-btn">
+            Edit
+            <div class="option file-bar__edit-option">
+              <button class="option-btn edit-option__undo">
+                <i class="option-icon fas fa-undo"></i>
+                Undo
+              </button>
+              <button class="option-btn edit-option__redo">
+                <i class="option-icon fas fa-redo"></i>
+                Redo
+              </button>
+              <button class="option-btn edit-option__cut">
+                <i class="option-icon fas fa-cut"></i>
+                Cut
+              </button>
+              <button class="option-btn edit-option__copy">
+                <i class="option-icon fas fa-copy"></i>
+                Copy
+              </button>
+              <button class="option-btn edit-option__paste">
+                <i class="option-icon fas fa-paste"></i>
+                Paste
+              </button>
+              <button class="option-btn edit-option__select">
+                <i class="option-icon fas fa-check-double"></i>
+                Select all
+              </button>
+            </div>
+          </li>
+          <li class="btn file-bar__btn file-bar__view-btn">
+            View
+          </li>
+          <li class="btn file-bar__btn file-bar__insert-btn">Insert</li>
+          <li class="btn file-bar__btn file-bar__format-btn">Format</li>
+          <li class="btn file-bar__btn file-bar__help-btn">Help</li>
+        </ul>
+        
+      </div>
+      <div class="file-header__about">
+        <button class="btn header-about-btn file-about__comment">
+          <i class="fas fa-comment-dots"></i>
+        </button>
+        <button class="btn file-about__share">
+          <i class="fas fa-share-alt"></i>
+          <p class="file-about__share-text">Share</p>
+        </button>
+        <button class="btn header-about-btn file-about__person">
+          <i class="fas fa-user-circle"></i>
+        </button>
+        <button class="btn header-about-btn mobile-menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <div id="file-content">
+      <textarea id="text" name="textContent"></textarea>
+    </div>
+  </div>
+  <div class="detail-modal-container">
+    <div class="detail-modal-wrapper">
+      <div class="detail-modal__close">
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <header class="detail-modal__heading">Document Details</header>
+      <div class="detail-modal__body">
+        <!-- JS -->
+      </div>
+    </div>
+  </div>
+
+  <div class="popup-container">
+    <div class="popup-wrapper">
+        <header class="popup-header">Delete</header>
+        <div class="popup-body">
+            <p class="popup-message popup-message__delete">This file will be deleted. Do you want to continue?</p>
+            <div class="popup-btn__wrapper">
+                <button class="popup-btn popup-btn__no">No</button>
+                <button class="popup-btn popup-btn__yes">Yes</button>
+            </div>
+        </div>
+    </div>
+  </div>
+<%- include('includes/footer.ejs') %>

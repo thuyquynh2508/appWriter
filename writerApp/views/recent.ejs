@@ -1,0 +1,29 @@
+<%- include('includes/header.ejs') %>
+    <div class="recent-page" id="recent">   
+        <div class="recent-nav">
+        <button class="btn return-btn recent-nav__return">
+            <i class="fa-solid fa-circle-arrow-left"></i>
+        </button>
+        <button class="btn recent-nav__btn recent-nav__new">New</button>
+        <button class="btn recent-nav__btn recent-nav__open">Open</button>
+        <button class="btn recent-nav__btn recent-nav__account">Account</button>
+        <button class="btn recent-nav__btn recent-nav__option">Option</button>
+        </div>
+        <div class="recent-main">
+        <h1 class="recent-header">Recent</h1>
+        <input type="text" class="recent-search" placeholder="Search">
+        <div class="recent-selection">
+            <button class="recent-selection-btn recent-selection__saved">Saved</button>
+            <button class="recent-selection-btn recent-selection__favorites">Favorites</button>
+            <button class="recent-selection-btn recent-selection__history">History</button>
+        </div>
+        <div class="recent-wrap">
+            <div class="recent-body">
+            <ul class="file-recent">
+                <!-- Xử lý ở js -->
+            </ul>
+            </div>   
+        </div>
+        </div>
+    </div>  
+<%- include('includes/footer.ejs') %>
